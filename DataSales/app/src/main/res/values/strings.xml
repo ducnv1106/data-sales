@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">DataSales</string>
+
+    <string name="str_no_memory_assess">Không có quyền truy cập bộ nhớ!</string>
+    <string name="no_internet_connection">Thiết bị của bạn đang mất kết nối hoặc không thể truy cập internet. Vui lòng kiểm tra lại.</string>
+    <string name="str_close">Đóng</string>
+
+    <string name="error_system_upgrading">Hệ thống đang nâng cấp. Vui lòng quay lại sau!</string>
+    <string name="error_fail_default">Hệ thống đang bận. Vui lòng thử lại sau!</string>
+
+    //framgent login
+    <string name="str_allow_account_personal_and_stall_login">Chỉ tài khoản cá nhân và tài khoản quầy mới được đăng nhập vào app</string>
+    <string name="hint_username">Số điện thoại</string>
+    <string name="hint_password">Mật khẩu</string>
+
+    <string name="error_empty_phone_number">Xin vui lòng nhập số điện thoại</string>
+    <string name="error_password_empty">Xin vui lòng nhập mật khẩu</string>
+    <string name="error_warning_phone">Số điện thoại không hợp lệ</string>
+
+    // fragment home
+    <string name="str_tab_home">Trang Chủ</string>
+    <string name="str_tab_custom">Khách hàng</string>
+    <string name="str_tab_marketing">Marketing</string>
+    <string name="str_tab_personal">Cá nhân</string>
+
+    //fragment custom
+    <string name="str_title_fragment_custom">KHÁCH HÀNG</string>
+    <string name="str_message_confirm_delete_custom">Bạn có chắc chắn muốn xóa dữ liệu này?</string>
+
+    //fragment marketing
+    <string name="str_title_fragment_marketing">MARKETING</string>
+
+    //fragment personal
+    <string name="str_title_fragment_personal">CÁ NHÂN</string>
+
+
+    // dialog detail marketing
+    <string name="str_title_marketing_detail">CHỈNH SỬA</string>
+    <string name="str_error_form_date_empty">Xin vui lòng chọn từ ngày</string>
+    <string name="str_error_to_date_empty">Xin vui lòng chọn đến ngày</string>
+    <string name="str_error_price_empty">Xin vui lòng nhập chi phí</string>
+    <string name="str_error_channel_empty">Xin vui lòng chọn kênh</string>
+    <string name="str_error_sum_amount_empty">Xin vui lòng nhập tổng tiền chi</string>
+    <string name="str_error_count_custom_empty">Xin vui lòng nhập số lượng khách hàng</string>
+    <string name="str_hint_date">dd/mm/yyyy</string>
+    <string name="str_hint_channel">Chọn kênh</string>
+    <string name="str_hint_price">Chi phí</string>
+    <string name="str_hint_sum_amount">Tổng tiền chi</string>
+    <string name="str_hint_count_custom">Số lượng khách hàng</string>
+    <string name="str_update_custom_success">Cập nhật dữ liệu thành công</string>
+    <string name="str_error_full_name_empty">Xin vui lòng nhập họ và tên</string>
+    <string name="str_error_role_empty">Xin vui lòng chọn quyền</string>
+    <string name="str_error_address_empty">Xin vui lòng nhập địa chỉ</string>
+    <string name="str_error_content_advisory_empty">Xin vui lòng nhập nội dung tư vấn</string>
+    <string name="str_error_status_empty">Xin vui lòng chọn trạng thái</string>
+    <string name="str_error_time_date_empty">Xin vui lòng chọn ngày hẹn</string>
+    <string name="str_error_hours_empty">Xin vui lòng chọn giờ hẹn</string>
+    <string name="str_error_content_appointment_empty">Xin vui lòng nhập nội dung hẹn</string>
+    <string name="str_error_content_personal_empty">Xin vui lòng chọn nhân viên chăm sóc</string>
+
+    // dialog list channel
+    <string name="str_title_dialog_list_channel">DANH SÁCH KÊNH</string>
+    <string name="str_please_choose_channel">Xin vui lòng chọn kênh</string>
+
+    // fragment create marketing
+    <string name="str_title_create_marketing">THÊM MỚI</string>
+    <string name="str_add_success">Cập nhật dữ liệu thành công</string>
+
+
+    //dialog change password
+    <string name="str_title_change_password">ĐỔI MẬT KHẨU</string>
+    <string name="str_not_entered_current_password">Xin vui lòng nhập mật khẩu cũ!</string>
+    <string name="str_not_entered_new_password">Xin vui lòng nhập mật khẩu mới!</string>
+    <string name="str_not_entered_confirm_password">Xin vui lòng xác nhận mật khẩu mới!</string>
+    <string name="str_not_match_password">Mật khẩu không khớp</string>
+    <string name="str_change_password_success">Thay đổi mật khẩu thành công</string>
+
+    //fragment manager staff
+    <string name="str_title_fragment_manager_staff">QUẢN LÝ NHÂN VIÊN</string>
+    <string name="str_status_online">Hoạt động</string>
+    <string name="str_status_offline">Khóa</string>
+    <string name="str_employee_delete_success">Xóa dữ liệu thành công!</string>
+    <string name="str_message_confirm_delete_employee">Bạn có chắc chắn muốn xóa người dùng này?</string>
+
+    //dialog add staff
+    <string name="str_title_dialog_add_staff">THÊM NHÂN VIÊN</string>
+
+    // dialog list role
+    <string name="str_title_dialog_list_role">DANH SÁCH QUYỀN</string>
+    <string name="str_please_choose_role">Xin vui lòng chọn quyền</string>
+
+    // dialog employee edit
+    <string name="str_title_dialog_employee_edit">SỬA NHÂN VIÊN</string>
+    <string name="str_reset_password_success">Cập nhật dữ liệu thành công</string>
+    <string name="str_edit_employee_success">Cập nhật dữ liệu thành công</string>
+
+    // fragment create custom
+    <string name="str_title_create_custom">THÊM KHÁCH HÀNG</string>
+    <string name="str_hint_name">Họ và tên</string>
+    <string name="str_hint_phone">Số điện thoại</string>
+    <string name="str_hint_address">Địa chỉ</string>
+    <string name="str_hint_content_advise">Nội dung tư vấn</string>
+    <string name="str_create_custom_success">Cập nhật dữ liệu thành công!</string>
+
+    // dialog list status
+    <string name="str_title_dialog_list_status">DANH SÁCH TRẠNG THÁI</string>
+    <string name="str_please_choose_status">Xin vui lòng chọn trạng thái</string>
+    
+    // dialog detail custom
+    <string name="str_title_dialog_detail_custom">SỬA KHÁCH HÀNG</string>
+
+    // dialog list employees
+    <string name="str_title_dialog_list_employees">DANH SÁCH NHÂN VIÊN</string>
+    <string name="str_please_choose_employee">Xin vui lòng chọn nhân viên</string>
+</resources>

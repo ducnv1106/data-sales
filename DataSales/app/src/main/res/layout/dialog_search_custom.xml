@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+      <variable
+          name="viewModel"
+          type="com.vinatti.datasales.viewmodel.SearchCustomViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_dialog_search"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:text="ĐIỀU KIỆN LỌC"
+            android:textColor="@color/colorBlack3"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/viewLine1"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/grey_300"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="@string/str_hint_phone"
+            android:textColor="@color/colorBlack3"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/viewLine1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:textSize="@dimen/_12sdp"
+            android:background="@null"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:inputType="number"
+            android:maxLines="1"
+            android:hint="@string/str_hint_phone"
+            android:textColorHint="@color/grey_300"
+            android:textColor="@color/colorBlack3"
+            app:layout_constraintEnd_toStartOf="@id/img_arr_channel"
+            app:layout_constraintStart_toEndOf="@id/gl3"
+            app:layout_constraintTop_toTopOf="@id/tv_phone_number"
+            app:layout_constraintBottom_toBottomOf="@id/tv_phone_number" />
+
+        <View
+            android:id="@+id/viewLine5"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_300"
+            app:layout_constraintTop_toBottomOf="@id/tv_phone_number" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="Kênh"
+            android:textColor="@color/colorBlack3"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewLine5" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_channel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="start|center"
+            android:textSize="@dimen/_12sdp"
+            android:text="@{viewModel.contentChannel}"
+            android:textColor="@color/colorBlack3"
+            app:layout_constraintEnd_toStartOf="@id/img_arr_channel"
+            app:layout_constraintStart_toEndOf="@id/gl3"
+            app:layout_constraintTop_toBottomOf="@id/viewLine5" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_arr_channel"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/grey_600"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name_channel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name_channel" />
+
+        <View
+            android:id="@+id/viewLine2"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_300"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_channel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="Trạng thái"
+            android:textColor="@color/colorBlack3"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewLine2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="start|center"
+            android:textSize="@dimen/_12sdp"
+            android:text="@{viewModel.contentStatus}"
+            android:textColor="@color/colorBlack3"
+            app:layout_constraintEnd_toStartOf="@id/img_arr_status"
+            app:layout_constraintStart_toEndOf="@id/gl3"
+            app:layout_constraintTop_toBottomOf="@id/viewLine2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_arr_status"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/grey_600"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name_status" />
+
+        <View
+            android:id="@+id/viewLine3"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/grey_300"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_status" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Từ ngày"
+            android:textColor="@color/colorBlack3"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewLine3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_from_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="start|center"
+            android:textSize="@dimen/_12sdp"
+            android:text="@{viewModel.fromDate}"
+            android:textColor="@color/colorBlack3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/gl3"
+            app:layout_constraintTop_toBottomOf="@id/viewLine3" />
+
+        <View
+            android:id="@+id/viewLine4"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/grey_300"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_from_date" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Đến ngày"
+            android:textColor="@color/colorBlack3"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewLine4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_to_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="start|center"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@{viewModel.toDate}"
+            app:layout_constraintStart_toEndOf="@id/gl3"
+            app:layout_constraintTop_toBottomOf="@id/viewLine4" />
+
+        <View
+            android:id="@+id/viewLine6"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/grey_300"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/tv_to_date" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_name_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Nhân viên\nchăm sóc"
+            android:textColor="@color/colorBlack3"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewLine6" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_personal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack3"
+            android:text="@{viewModel.contentCaringStaff}"
+            app:layout_constraintEnd_toStartOf="@id/img_arr_personal"
+            app:layout_constraintStart_toEndOf="@id/gl3"
+            app:layout_constraintTop_toTopOf="@id/tv_name_personal"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name_personal" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_arr_personal"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/ic_arrow_right"
+            android:tint="@color/grey_600"
+            app:layout_constraintBottom_toBottomOf="@id/tv_name_personal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_name_personal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintTop_toBottomOf="@id/tv_name_personal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/btn_search"
+            android:text="TÌM KIẾM"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_btn_search_dialog"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="@dimen/_35sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
